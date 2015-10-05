@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,10 +26,10 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </head>
 
@@ -238,6 +238,120 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </section>
+        <hr>
+
+    <!-- Jedi Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Jedi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+        <!-- MODAL 1 -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Adicione um Jedi
+        </button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Adicione um Jedi</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- MODAL corpo -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+                                    <form name="jediForm" id="Form_jedi" novalidate>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label>Nome do Jedi:</label>
+                                                <input type="text" class="form-control" placeholder="Nome do Jedi" id="name_jedi" required data-validation-required-message="Por favor insira o nome do jedi.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label>Espécie:</label>
+                                                <input type="text" class="form-control" placeholder="Espécie do Jedi" id="specie_jedi" required data-validation-required-message="Por favor insira a espécie do jedi.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label>Planeta:</label>
+                                                <input type="text" class="form-control" placeholder="Planeta natal" id="planet_jedi" required data-validation-required-message="Por favor insira o planeta natal do jedi.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label>Idade:</label>
+                                                <input type="number" size="6" name="age" min="0" max="999" value="22" id="age_jedi">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label for="instituicao">Sexo:</label>
+                                                <select class="form-control" placeholder="Sexo" id="sex_jedi">
+                                                    <option>--- SELECIONE O SEXO DO JEDI ---</option>
+                                                    <option value="m">Masculino</option>
+                                                    <option value="f">Feminino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label>MidiChlorians:</label>
+                                                <input type="number" size="6" name="midiChlorians" min="2500" max="20000" value="2500" id="midichlorians_jedi">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                                <label for="dept">Departamento:</label>
+                                                <select class="form-control" placeholder="Classe" id="class_jedi">
+                                                    <option>--- SELECIONE A CLASSE DO JEDI ---</option>
+                                                    <option>Iniciado</option>
+                                                    <option>Corpo de Serviço</option>
+                                                    <option>Padawan</option>
+                                                    <option>Cavaleiro</option>
+                                                    <option>Mestre</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!-- div row -->
+                            </div><!-- div container -->
+
+                        </div> <!-- MODAL corpo END -->
+                        <div class="modal-footer">
+                            <!--  <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">Fechar</button> -->
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                        </form> <!-- FORM END -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- MODAL1 END -->
+        </div>
         </div>
     </section>
 
@@ -513,4 +627,4 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
-</html>
+    </html>
