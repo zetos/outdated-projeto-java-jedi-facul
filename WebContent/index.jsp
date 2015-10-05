@@ -513,6 +513,4 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
-</body>
-
 </html>
