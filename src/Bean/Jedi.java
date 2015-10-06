@@ -9,10 +9,13 @@ public class Jedi {
 	private String sexo;
 	private int idade;
 	private int midiChlorians;
+	private String classe;
 	
 	public Jedi() {	}
-
-	public Jedi(String nome, String especie, String planeta, String status, String sexo, int idade, int midiChlorians) {
+	
+	public Jedi(String nome, String especie, String planeta, String status, String sexo, int idade, int midiChlorians,
+			String classe) {
+		super();
 		this.nome = nome;
 		this.especie = especie;
 		this.planeta = planeta;
@@ -20,8 +23,9 @@ public class Jedi {
 		this.sexo = sexo;
 		this.idade = idade;
 		this.midiChlorians = midiChlorians;
+		this.classe = classe;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -64,5 +68,12 @@ public class Jedi {
 	public void setMidiChlorians(int midiChlorians) {
 		this.midiChlorians = midiChlorians;
 	}
+	public String getClasse() {
+		return classe;
+	}
+	public void setClasse(String classe) {
+		this.classe = classe;
+	}
+
 	
 }
