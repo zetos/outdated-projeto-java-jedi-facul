@@ -79,7 +79,7 @@ pageEncoding="utf-8"%>
                     <img class="img-responsive" src="img/yoda.png" alt="">
                     <div class="intro-text">
                         <span class="name">Star Wars</span>
-                        <hr class="star-light">
+                        <hr class="star-primary">
                         <span class="skills">Plataforma para usuarios da força.</span>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ pageEncoding="utf-8"%>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
-                    <hr class="star-light">
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -308,8 +308,8 @@ pageEncoding="utf-8"%>
                                         <div class="row control-group">
                                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                                 <label for="instituicao">Sexo:</label>
-                                                <select class="form-control" placeholder="Sexo" id="sex_jedi">
-                                                    <option>--- SELECIONE O SEXO DO JEDI ---</option>
+                                                <select class="form-control" placeholder="Sexo" id="sex_jedi" required data-validation-required-message="Por favor insira o sexo do jedi.">
+                                                    <option value="">--- SELECIONE O SEXO DO JEDI ---</option>
                                                     <option value="m">Masculino</option>
                                                     <option value="f">Feminino</option>
                                                 </select>
@@ -327,13 +327,13 @@ pageEncoding="utf-8"%>
                                         <div class="row control-group">
                                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                                 <label for="dept">Departamento:</label>
-                                                <select class="form-control" placeholder="Classe" id="class_jedi">
-                                                    <option>--- SELECIONE A CLASSE DO JEDI ---</option>
-                                                    <option>Iniciado</option>
-                                                    <option>Corpo de Serviço</option>
-                                                    <option>Padawan</option>
-                                                    <option>Cavaleiro</option>
-                                                    <option>Mestre</option>
+                                                <select class="form-control" placeholder="Classe" id="class_jedi" required data-validation-required-message="Por favor insira o sexo do jedi.">
+                                                    <option value="">--- SELECIONE A CLASSE DO JEDI ---</option>
+                                                    <option value="1">Iniciado</option>
+                                                    <option value="2">Corpo de Serviço</option>
+                                                    <option value="3">Padawan</option>
+                                                    <option value="4">Cavaleiro</option>
+                                                    <option value="4">Mestre</option>
                                                 </select>
                                             </div>
                                         </div>
