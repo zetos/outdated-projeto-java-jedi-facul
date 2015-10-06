@@ -13,7 +13,7 @@ import Bean.Jedi;
 import Dao.JediDAO;
 	
 /** * Servlet implementation class ServletAlunos */
-@WebServlet("/ServletAlunos")
+@WebServlet("/JediServlet")
 public class JediServlet extends HttpServlet {
 
 	private String paginaJsp;
