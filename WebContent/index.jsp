@@ -199,7 +199,7 @@ pageEncoding="utf-8"%>
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" action="" method="get" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -306,7 +306,7 @@ pageEncoding="utf-8"%>
                                         </div>
 
                                         <div class="row control-group">
-                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                            <div class="form-group col-xs-12 controls">
                                                 <label for="instituicao">Sexo:</label>
                                                 <select class="form-control" placeholder="Sexo" id="sex_jedi" required data-validation-required-message="Por favor insira o sexo do jedi.">
                                                     <option value="">--- SELECIONE O SEXO DO JEDI ---</option>
@@ -325,7 +325,7 @@ pageEncoding="utf-8"%>
                                         </div>
 
                                         <div class="row control-group">
-                                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                            <div class="form-group col-xs-12 controls">
                                                 <label for="dept">Departamento:</label>
                                                 <select class="form-control" placeholder="Classe" id="class_jedi" required data-validation-required-message="Por favor insira o sexo do jedi.">
                                                     <option value="">--- SELECIONE A CLASSE DO JEDI ---</option>
