@@ -62,8 +62,6 @@
 					<li class="hidden"><a href="#page-top"></a></li>
 					<li class="page-scroll"><a href="#listar">Arquivos Jedi</a></li>
 					<li class="page-scroll"><a href="#contact">Registro</a></li>
-					<li class="page-scroll"><a href="#">Editar</a></li>
-					<li class="page-scroll"><a href="#">Excluir</a></li>
 					<li class="page-scroll"><a href="#about">Sobre</a></li>
 				</ul>
 			</div>
