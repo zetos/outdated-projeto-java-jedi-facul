@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 pageEncoding="utf-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,10 +78,11 @@ pageEncoding="utf-8"%>
      </div>
  </div>
  <div class="row">
-    <div class="col-lg-10 text-center">
-     <p>Se você está aqui significa que fez algo de errado. Cuidado, esse pode ser um passo em direção ao lado negro !
+    <div class="col-lg-12 text-center">
+    <p>Se você está aqui significa que fez algo de errado. Cuidado, esse pode ser um passo em direção ao lado negro !
       Por favor, medite e tente novamente.</p>
-      <p><i>O erro é o caminho para o lado negro. O erro leva a raiva, a raiva leva ao ódio, o ódio leva ao sofrimento.</i></p>
+    <p><i>O erro é o caminho para o lado negro. O erro leva a raiva, a raiva leva ao ódio, o ódio leva ao sofrimento.</i></p>
+    <a href="index.jsp">Clique aqui para Voltar</a>
   </div>
 </div>
 </div>
