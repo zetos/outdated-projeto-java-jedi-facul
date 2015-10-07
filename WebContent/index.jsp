@@ -267,7 +267,7 @@
 									<div class="row control-group">
 										<div
 											class="form-group col-xs-12 floating-label-form-group controls">
-											<label>Idade:</label> <input type="number" size="6"
+											<label>Idade:</label> <input type="number"
 												name="txtIdade" min="0" max="999" value="22" id="age_jedi">
 											<p class="help-block text-danger"></p>
 										</div>
@@ -289,7 +289,7 @@
 									<div class="row control-group">
 										<div
 											class="form-group col-xs-12 floating-label-form-group controls">
-											<label>MidiChlorians:</label> <input type="number" size="6"
+											<label>MidiChlorians:</label> <input type="number" size="5"
 												name="txtMidi" min="2500" max="20000" value="2500"
 												id="midichlorians_jedi">
 											<p class="help-block text-danger"></p>
