@@ -42,16 +42,12 @@ public class JediServlet extends HttpServlet {
 		String cmd = request.getParameter("cmd");
 
 		try {
-
 			if (cmd != null)
 				jediBind();
 
 			dao = new JediDAO();
 
 			switch (cmd.toLowerCase()) {
-			case "listar":
-				listar();
-				break;
 			case "incluir":
 				incluir();
 				break;
@@ -60,9 +56,6 @@ public class JediServlet extends HttpServlet {
 				break;
 			case "excluir":
 				excluirPost();
-				break;
-			case "con":
-				consultar();
 				break;
 			case "atu":
 				atualizarGet();
@@ -89,45 +82,34 @@ public class JediServlet extends HttpServlet {
 	private void atualizarGet() throws Exception {
 		jedi = dao.procurarJedi(jedi.getNome());
 		HttpSession session = request.getSession(true);
-		session.setAttribute("aluno", jedi);
-		paginaJsp = "/formAtuAluno.jsp";
+		session.setAttribute("jedi", jedi);
+		paginaJsp = "/atualizar.jsp";
 	}
 
 	private void atualizarPost() throws Exception {
 		dao.atualizar(jedi);
-		paginaJsp = "/ServletAlunos?cmd=listar";
-	}
-
-	private void listar() throws Exception {
-		request.setAttribute("alunosList", dao.todosJedi());
-		paginaJsp = "/mostrarAlunosCads.jsp";
+		paginaJsp = "/JediServlet?cmd=principal";
 	}
 
 	private void incluir() throws Exception {
 		dao.salvar(jedi);
-		paginaJsp = "/ServletAlunos?cmd=listar";
+		paginaJsp = "/JediServlet?cmd=principal";
 	}
 
 	private void excluirGet() throws Exception {
 		jedi = dao.procurarJedi(jedi.getNome());
 		HttpSession session = request.getSession(true);
-		session.setAttribute("aluno", jedi);
-		paginaJsp = "/formExcAluno.jsp";
+		session.setAttribute("jedi", jedi);
+		paginaJsp = "/excluir.jsp";
 	}
 
 	private void excluirPost() throws Exception {
 		dao.excluir(jedi);
-		paginaJsp = "/ServletAlunos?cmd=listar";
+		paginaJsp = "/JediServlet?cmd=principal";
 	}
 
-	private void consultar() throws Exception {
-		jedi = dao.procurarJedi(jedi.getNome());
-		HttpSession session = request.getSession(true);
-		session.setAttribute("aluno", jedi);
-		paginaJsp = "/formConsAluno.jsp";
-	}
-
-	private void principal() {
+	private void principal() throws Exception {
+		request.setAttribute("todosJedi", dao.todosJedi());
 		paginaJsp = "/index.jsp";
 	}
 
