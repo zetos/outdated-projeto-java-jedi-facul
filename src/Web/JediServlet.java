@@ -1,5 +1,6 @@
 package Web;
 
+import java.awt.print.Printable;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -73,9 +74,10 @@ public class JediServlet extends HttpServlet {
 			rd.forward(request, response);
 
 		} catch (Exception e) {
-			request.setAttribute("erro", e.toString() + " " + e.getMessage());
-			rd = request.getRequestDispatcher("/erro.jsp");
-			rd.forward(request, response);
+			//request.setAttribute("erro", e.toString() + " " + e.getMessage());
+			//rd = request.getRequestDispatcher("/erro.jsp");
+			//rd.forward(request, response);
+			log(e.toString());
 		}
 	}
 
