@@ -78,7 +78,7 @@
 					<img class="img-responsive" src="img/yoda.png" alt="">
 					<div class="intro-text">
 						<span class="name">Star Wars</span>
-						<hr class="star-primary">
+            <br>
 						<span class="skills">Plataforma para usuarios da força.</span>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 
 					<table class="table table-striped">
 						<tr>
-							<th colspan="8"><h3>Lista de Jedis</h3></th>
+							<th colspan="10"><h3>Lista de Jedis</h3></th>
 						</tr>
 						<tr>
 							<th>Nome</th>
@@ -141,7 +141,7 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>About</h2>
-					<hr class="star-primary">
+					<br>
 				</div>
 			</div>
 			<div class="row">
@@ -168,15 +168,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Jedi</h2>
+					<h2>Adicione um Jedi</h2>
+					<br>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 text-center">
 					<!-- MODAL botao -->
 					<button type="button" class="btn btn-primary btn-lg"
-						data-toggle="modal" data-target="#myModal">Adicione um
-						Jedi</button>
+						data-toggle="modal" data-target="#myModal">Adicionar</button>
 				</div>
 			</div>
 	</section>

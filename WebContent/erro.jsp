@@ -59,34 +59,27 @@ pageEncoding="utf-8"%>
          <img class="img-responsive" src="img/vader.png" alt="">
          <div class="intro-text">
           <span class="name">ERRO</span>
-          <span class="skills">Você está indo para o lado negro da força.</span>
+          <span class="skills">Você pode estar indo para o lado negro da força.</span>
       </div>
   </div>
 </div>
 </div>
 </header>
 
-<!-- About Section -->
+<!-- Erro Section -->
 <section class="success" id="about">
     <div class="container">
        <div class="row">
         <div class="col-lg-12 text-center">
-         <h2>ERROR 666</h2>
+         <h2>Que a força esteja com você.</h2>
          <br>
      </div>
  </div>
  <div class="row">
-    <div class="col-lg-4 col-lg-offset-2">
-     <p>Freelancer is a free bootstrap theme created by Start
-      Bootstrap. The download includes the complete source files
-      including HTML, CSS, and JavaScript as well as optional LESS
-      stylesheets for easy customization.</p>
-  </div>
-  <div class="col-lg-4">
-     <p>Whether you're a student looking to showcase your work, a
-      professional looking to attract clients, or a graphic artist
-      looking to share your projects, this template is the perfect
-      starting point!</p>
+    <div class="col-lg-10 text-center">
+     <p>Se você está aqui significa que fez algo de errado. Cuidado, esse pode ser um passo em direção ao lado negro !
+      Por favor, medite e tente novamente.</p>
+      <p><i>O erro é o caminho para o lado negro. O erro leva a raiva, a raiva leva ao ódio, o ódio leva ao sofrimento.</i></p>
   </div>
 </div>
 </div>
