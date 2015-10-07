@@ -125,8 +125,8 @@
 								<td>${lista.midiChlorians}</td>
 								<td>${lista.classe}</td>
 								<td>${lista.status}</td>
-								<td><a href="editar.jsp"><img class="img-responsive" src="img/Jedi_Republic.png" alt=""></a></td>
-								<td><a href="excluir.jsp"><img class="img-responsive" src="img/Sith_Empire.png" alt=""></a></td>
+								<td><a href="JediServlet?cmd=atu&txtNome=${ lista.nome }"><img class="img-responsive" src="img/Jedi_Republic.png" alt=""></a></td>
+								<td><a href="JediServlet?cmd=exc&txtNome=${ lista.nome }"><img class="img-responsive" src="img/Sith_Empire.png" alt=""></a></td>
 							</tr>
 						</c:forEach>
 					</table>

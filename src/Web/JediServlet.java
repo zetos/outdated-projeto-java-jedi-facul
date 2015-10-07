@@ -84,7 +84,7 @@ public class JediServlet extends HttpServlet {
 		jedi = dao.procurarJedi(jedi.getNome());
 		HttpSession session = request.getSession(true);
 		session.setAttribute("jedi", jedi);
-		paginaJsp = "/atualizar.jsp";
+		paginaJsp = "/editar.jsp";
 	}
 
 	private void atualizarPost() throws Exception {
