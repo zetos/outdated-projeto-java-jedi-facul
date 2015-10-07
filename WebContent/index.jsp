@@ -141,7 +141,7 @@ pageEncoding="utf-8"%>
        <div class="row">
         <div class="col-lg-12 text-center">
          <h2>About</h2>
-         <hr class="star-primary">
+         <br>
      </div>
  </div>
  <div class="row">
@@ -160,8 +160,6 @@ pageEncoding="utf-8"%>
 </div>
 </div>
 </section>
-
-<hr>
 
 <!-- Registro Jedi Section -->
 <section id="registro">
