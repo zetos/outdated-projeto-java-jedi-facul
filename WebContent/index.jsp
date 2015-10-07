@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
+<%@ page import="Bean.Jedi" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +53,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#page-top">Arquivo Jedi</a>
+				<a class="navbar-brand" href="#page-top">Star Wars</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,9 +61,11 @@
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="hidden"><a href="#page-top"></a></li>
-					<li class="page-scroll"><a href="#arquivo">Arquivos Jedi</a></li>
-					<li class="page-scroll"><a href="#about">Sobre</a></li>
-					<li class="page-scroll"><a href="#contact">Contact</a></li>
+					<li class="page-scroll"><a href="#listar">Arquivos Jedi</a></li>
+					<li class="page-scroll"><a href="#contact">Registro</a></li>
+                    <li class="page-scroll"><a href="#">Editar</a></li>
+                    <li class="page-scroll"><a href="#">Excluir</a></li>
+                    <li class="page-scroll"><a href="#about">Sobre</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -84,75 +89,58 @@
 		</div>
 	</header>
 
-	<!-- Portfolio Grid Section -->
-	<section id="arquivo">
+	<!-- Arquivos Jedi Section -->
+	<section id="listar">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Portfolio</h2>
+					<h2>Arquivos Jedi</h2>
 					<hr class="star-primary">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal1" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/jedi1.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal2" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/jedi2.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal3" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/jedi3.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal4" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/jedi4.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal5" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/jedi5.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 portfolio-item">
-					<a href="#portfolioModal6" class="portfolio-link"
-						data-toggle="modal">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div> <img src="img/portfolio/yoda2.png" class="img-responsive" alt="">
-					</a>
+				<div class="col-lg-12">
+					   <!-- Lista Jedi -->
+
+<table class="table table-striped">
+<tr>
+<th colspan="8"><h3>Lista de Jedis</h3></th>
+</tr>
+<tr>
+<th>Nome</th>
+<th>Espécie</th>
+<th>Planeta Natal</th>
+<th>Sexo</th>
+<th>Idade</th>
+<th>MidiChlorians</th>
+<th>Status</th>
+<th>Classe</th>
+</tr>
+
+ <%
+ List <Jedi> lista = new ArrayList<Jedi>();
+ lista = (ArrayList) request.getAttribute("JediList");
+ for(Jedi a: lista ){%>
+<tr>
+<td><%=a.getNome()%></td>
+<td><%=a.getEspecie()%></td>
+<td><%=a.getPlaneta()%></td>
+<td><%=a.getStatus()%></td>
+<td><%=a.getSexo()%></td>
+<td><%=a.getIdade()%></td>
+<td><%=a.getMidiChlorians()%></td>
+<td><%=a.getClasse()%></td>
+</tr>
+ <%
+ }
+ %>
+
+<tr>
+<td colspan="6" align="center"><a href="index.jsp">Página Principal</a></td>
+</tr>
+</table>
+
+
 				</div>
 			</div>
 		</div>
@@ -180,19 +168,14 @@
 						looking to share your projects, this template is the perfect
 						starting point!</p>
 				</div>
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<a href="#" class="btn btn-lg btn-outline"> <i
-						class="fa fa-download"></i> Download Theme
-					</a>
-				</div>
 			</div>
 		</div>
 	</section>
 
 	<hr>
 
-	<!-- Jedi Section -->
-	<section id="contact">
+	<!-- Registro Jedi Section -->
+	<section id="registro">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -200,8 +183,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<!-- MODAL 1 -->
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+					<!-- MODAL botao -->
 					<button type="button" class="btn btn-primary btn-lg"
 						data-toggle="modal" data-target="#myModal">Adicione um Jedi</button>
 				</div>
@@ -237,7 +220,7 @@
 			class="fa fa-chevron-up"></i>
 		</a>
 	</div>
-
+                    <!-- MODAL inicio -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
