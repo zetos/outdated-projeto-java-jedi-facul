@@ -74,10 +74,9 @@ public class JediServlet extends HttpServlet {
 			rd.forward(request, response);
 
 		} catch (Exception e) {
-			//request.setAttribute("erro", e.toString() + " " + e.getMessage());
-			//rd = request.getRequestDispatcher("/erro.jsp");
-			//rd.forward(request, response);
-			log(e.toString());
+			request.setAttribute("erro", e.toString() + " " + e.getMessage());
+			rd = request.getRequestDispatcher("/erro.jsp");
+			rd.forward(request, response);
 		}
 	}
 
