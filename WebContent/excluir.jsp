@@ -5,12 +5,12 @@ pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Star Wars - Excluir</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Star Wars - Excluir</title>
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,12 +34,124 @@ pageEncoding="utf-8"%>
 <![endif]-->
 </head>
 <body id="page-top" class="index">
+    <!-- Header -->
+    <header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Excluir</span>
+                        <span class="skills">Medite antes de tomar qualquer decisão..</span>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Atualizar Section -->
+    <section id="listar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <jsp:useBean id="jedi" scope="session" class="Bean.Jedi" />
 
+                    <form action="JediServlet?cmd=excluir" method="post">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>Nome:</td>
+                                <td>
+                                    <input class="form-control" type="text" name="txtNome" value="${jedi.nome}" id="name_jedi" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Espécie:</td>
+                                <td>
+                                    <input class="form-control" type="text" name="txtEspecie" value="${jedi.especie}" id="specie_jedi" required
+                                    data-validation-required-message="Por favor insira a espécie do jedi." disabled>
+                                    <p class="help-block text-danger">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Planeta:</td>
+                                    <td>
+                                        <input type="text" name="txtPlaneta" 
+                                        value="${jedi.planeta}" required
+                                        data-validation-required-message="Por favor insira o planeta natal do jedi." disabled  />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Idade:</td>
+                                    <td>
+                                        <input type="number" name="txtIdade" min="0" max="999" 
+                                        value="${jedi.idade}" disabled />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sexo:</td>
+                                    <td>
+                                        <select class="form-control"
+                                        name="txtSexo" value="${jedi.sexo}" disabled>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Feminino">Feminino</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MidiChlorians:</td>
+                                <td>
+                                    <input type="number" name="txtMidi" min="2500" max="20000" 
+                                    value="${jedi.midiChlorians}" disabled />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Classe:</td>
+                                <td>
+                                    <select
+                                    class="form-control"
+                                    required name="txtClasse" value="${jedi.classe}" disabled>
+                                    <option value="Iniciado">Iniciado</option>
+                                    <option value="Corpo de Serviço">Corpo de Serviço</option>
+                                    <option value="Padawan">Padawan</option>
+                                    <option value="Cavaleiro">Cavaleiro</option>
+                                    <option value="Mestre">Mestre</option>
+                                </select>
 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Status:</td>
+                            <td>
+                                <textarea rows="2" class="form-control" name="txtStatus"
+                                value="${jedi.status}" required
+                                data-validation-required-message="Por favor entre com o status do jedi." disabled></textarea>
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <th colspan="2">
+                                <input type="submit" class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />
+                            </th>
+                        </tr>   
+                    </table>
+                </form> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">Copyright &copy; Asia Corp 2015</div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-
-
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top"> <i
+        class="fa fa-chevron-up"></i>
+    </a>
+</div>
 
 
 </body>

@@ -86,8 +86,6 @@ pageEncoding="utf-8"%>
 								<tr>
 									<td>Sexo:</td>
 									<td>
-										<input type="text" name="txtSexo" 
-										value="${jedi.sexo}" />
 										<select class="form-control"
 										name="txtSexo" value="${jedi.sexo}">
 										<option value="Masculino">Masculino</option>
