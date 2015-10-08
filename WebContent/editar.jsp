@@ -96,7 +96,7 @@ pageEncoding="utf-8"%>
 												<tr>
 													<td>Classe:</td>
 													<td><select class="form-control" required name="txtClasse"
-														value="${jedi.classe}" readonly="readonly">
+														value="${jedi.classe}">
 														<option value="Iniciado">Iniciado</option>
 														<option value="Corpo de Serviço">Corpo de Serviço</option>
 														<option value="Padawan">Padawan</option>

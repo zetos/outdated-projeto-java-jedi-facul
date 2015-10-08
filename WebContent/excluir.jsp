@@ -79,7 +79,7 @@ pageEncoding="utf-8"%>
                             <tr>
                                 <td>Sexo:</td>
                                 <td><input class="form-control" type="text"
-                                    name="txtSexo" value="${jedi.sexo}">
+                                    name="txtSexo" value="${jedi.sexo}" readonly="readonly">
                                 </td>
                             </tr>
                             <tr>
@@ -90,7 +90,7 @@ pageEncoding="utf-8"%>
                             <tr>
                                 <td>Classe:</td>
                                 <td> <input class="form-control" type="text"
-                                    name="txtClasse" value="${jedi.classe}">
+                                    name="txtClasse" value="${jedi.classe}" readonly="readonly">
                                 </td>
 
                             </tr>
