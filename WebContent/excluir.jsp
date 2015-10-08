@@ -41,6 +41,7 @@
 				<div class="intro-text">
 					<span class="name">Excluir</span> <span class="skills">Medite
 						antes de tomar qualquer decisão..</span>
+                        <hr>
 				</div>
 			</div>
 		</div>
@@ -62,45 +63,45 @@
 							<tr>
 								<td>Espécie:</td>
 								<td><input class="form-control" type="text"
-									name="txtEspecie" value="${jedi.especie}" id="specie_jedi" disabled>
+									name="txtEspecie" value="${jedi.especie}" id="specie_jedi" readonly="readonly">
 									<p class="help-block text-danger"></td>
 							</tr>
 							<tr>
 								<td>Planeta:</td>
-								<td><input type="text" name="txtPlaneta"
-									value="${jedi.planeta}"	disabled /></td>
+								<td><input class="form-control" type="text" name="txtPlaneta"
+									value="${jedi.planeta}"	readonly="readonly"></td>
 							</tr>
 							<tr>
 								<td>Idade:</td>
-								<td><input type="number" name="txtIdade" min="0" max="999"
-									value="${jedi.idade}" disabled /></td>
+								<td><input class="form-control" type="number" name="txtIdade" min="0" max="999"
+									value="${jedi.idade}" readonly="readonly"></td>
 							</tr>
 							<tr>
 								<td>Sexo:</td>
 								<td><select class="form-control" name="txtSexo"
-									value="${jedi.sexo}" disabled>
+									value="${jedi.sexo}" readonly="readonly">
 								</select></td>
 							</tr>
 							<tr>
 								<td>MidiChlorians:</td>
-								<td><input type="number" name="txtMidi" min="2500"
-									max="20000" value="${jedi.midiChlorians}" disabled /></td>
+								<td><input class="form-control" type="number" name="txtMidi" min="2500"
+									max="20000" value="${jedi.midiChlorians}" readonly="readonly" /></td>
 							</tr>
 							<tr>
 								<td>Classe:</td>
 								<td><select class="form-control" required name="txtClasse"
-									value="${jedi.classe}" disabled>
+									value="${jedi.classe}" readonly="readonly">
 								</select></td>
 							</tr>
 							<tr>
 								<td>Status:</td>
-								<td><input class="form-control"
-										name="txtStatus" value="${jedi.status}" disabled></input></td>
+								<td><textarea rows="2" class="form-control"
+										name="txtStatus" value="${jedi.status}" readonly="readonly"></textarea></td>
 							</tr>
 
 							<tr>
 								<th colspan="2"><input type="submit"
-									class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />
+									class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />   <a class="btn btn-default btn-lg" href="index.jsp" role="button">Voltar</a>
 								</th>
 							</tr>
 						</table>
@@ -119,15 +120,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-	<div class="scroll-top page-scroll visible-xs visible-sm">
-		<a class="btn btn-primary" href="#page-top"> <i
-			class="fa fa-chevron-up"></i>
-		</a>
-	</div>
-
-
 </body>
 <!-- jQuery -->
 <script src="js/jquery.js"></script>

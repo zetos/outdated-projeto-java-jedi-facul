@@ -41,6 +41,7 @@
 				<div class="intro-text">
 					<span class="name">Atualizar</span> <span class="skills">Medite
 						antes de tomar qualquer decisão..</span>
+						<hr>
 				</div>
 			</div>
 		</div>
@@ -69,15 +70,15 @@
 							</tr>
 							<tr>
 								<td>Planeta:</td>
-								<td><input type="text" name="txtPlaneta"
+								<td><input class="form-control" type="text" name="txtPlaneta"
 									value="${jedi.planeta}" required
-									data-validation-required-message="Por favor insira o planeta natal do jedi." />
+									data-validation-required-message="Por favor insira o planeta natal do jedi.">
 								</td>
 							</tr>
 							<tr>
 								<td>Idade:</td>
-								<td><input type="number" name="txtIdade" min="0" max="999"
-									value="${jedi.idade}" /></td>
+								<td><input class="form-control" type="number" name="txtIdade" min="0" max="999"
+									value="${jedi.idade}"></td>
 							</tr>
 							<tr>
 								<td>Sexo:</td>
@@ -88,8 +89,8 @@
 							</tr>
 							<tr>
 								<td>MidiChlorians:</td>
-								<td><input type="number" name="txtMidi" min="2500"
-									max="20000" value="${jedi.midiChlorians}" /></td>
+								<td><input class="form-control" type="number" name="txtMidi" min="2500"
+									max="20000" value="${jedi.midiChlorians}"></td>
 							</tr>
 							<tr>
 								<td>Classe:</td>
@@ -103,16 +104,16 @@
 							</tr>
 							<tr>
 								<td>Status:</td>
-								<td><input class="form-control"
+								<td><textarea rows="2" class="form-control"
 										name="txtStatus" value="${jedi.status}" required
-										data-validation-required-message="Por favor entre com o status do jedi."></input>
+										data-validation-required-message="Por favor entre com o status do jedi."></textarea>
 								</td>
 							</tr>
 
 							<tr>
 								<th colspan="2"><input type="submit"
 									class="btn btn-primary btn-lg" name="btAtualizar"
-									value="Salvar" /></th>
+									value="Salvar" />   <a class="btn btn-default btn-lg" href="index.jsp" role="button">Voltar</a></th>
 							</tr>
 						</table>
 					</form>
@@ -130,14 +131,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-	<div class="scroll-top page-scroll visible-xs visible-sm">
-		<a class="btn btn-primary" href="#page-top"> <i
-			class="fa fa-chevron-up"></i>
-		</a>
-	</div>
-
 
 </body>
 <!-- jQuery -->

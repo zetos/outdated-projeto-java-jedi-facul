@@ -35,24 +35,6 @@ pageEncoding="utf-8"%>
 </head>
 <body id="page-top" class="index">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-     <button type="button" class="navbar-toggle" data-toggle="collapse"
-     data-target="#bs-example-navbar-collapse-1">
-     <span class="sr-only">Toggle navigation</span> <span
-     class="icon-bar"></span> <span class="icon-bar"></span> <span
-     class="icon-bar"></span>
-   </button>
-   <a class="navbar-brand text-center" href="JediServlet?cmd=principal">Star Wars</a>
- </div>
-
-</div>
-<!-- /.container-fluid -->
-</nav>
-
 <!-- Header -->
 <header>
    <div class="row">
@@ -80,7 +62,7 @@ pageEncoding="utf-8"%>
     <p>Se você está aqui significa que fez algo de errado. Cuidado, esse pode ser um passo em direção ao lado negro !
       Por favor, medite e tente novamente.</p>
       <p><i>O erro é o caminho para o lado negro. O erro leva a raiva, a raiva leva ao ódio, o ódio leva ao sofrimento.</i></p>
-      <a href="index.jsp">Clique aqui para Voltar</a>
+      <a class="btn btn-default btn-lg" href="index.jsp" role="button">Clique aqui para voltar</a>
     </div>
   </div>
 </div>
