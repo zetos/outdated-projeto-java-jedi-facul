@@ -46,7 +46,7 @@ pageEncoding="utf-8"%>
      class="icon-bar"></span> <span class="icon-bar"></span> <span
      class="icon-bar"></span>
    </button>
-   <a class="navbar-brand text-center" href="index.jsp">Star Wars</a>
+   <a class="navbar-brand text-center" href="JediServlet?cmd=principal">Star Wars</a>
  </div>
 
 </div>

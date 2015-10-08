@@ -65,6 +65,7 @@ public class JediDAO {
 			ps.setInt(6, jedi.getIdade());
 			ps.setInt(7, jedi.getMidiChlorians());
 			ps.setString(8, jedi.getClasse());
+			ps.setString(9, jedi.getNome());
 			ps.executeUpdate();
 		} catch (SQLException sqle) {
 			throw new Exception("Erro ao alterar dados " + sqle, sqle);
