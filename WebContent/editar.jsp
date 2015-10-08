@@ -104,9 +104,9 @@
 							</tr>
 							<tr>
 								<td>Status:</td>
-								<td><textarea rows="2" class="form-control"
+								<td><input type="textarea" class="form-control"
 										name="txtStatus" value="${jedi.status}" required
-										data-validation-required-message="Por favor entre com o status do jedi."></textarea>
+										data-validation-required-message="Por favor entre com o status do jedi."></input>
 								</td>
 							</tr>
 

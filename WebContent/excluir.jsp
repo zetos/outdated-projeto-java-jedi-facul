@@ -95,8 +95,8 @@
 							</tr>
 							<tr>
 								<td>Status:</td>
-								<td><textarea rows="2" class="form-control"
-										name="txtStatus" value="${jedi.status}" readonly="readonly"></textarea></td>
+								<td><input type="textarea" class="form-control"
+										name="txtStatus" value="${jedi.status}" readonly="readonly"></input></td>
 							</tr>
 
 							<tr>
