@@ -41,7 +41,7 @@
 				<div class="intro-text">
 					<span class="name">Atualizar</span> <span class="skills">Medite
 						antes de tomar qualquer decisão..</span>
-						<hr>
+						<br>
 				</div>
 			</div>
 		</div>
