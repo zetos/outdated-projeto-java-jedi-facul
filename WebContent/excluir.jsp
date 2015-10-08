@@ -95,7 +95,7 @@
 							</tr>
 							<tr>
 								<td>Status:</td>
-								<td><input type="textarea" class="form-control"
+								<td><input type="text" class="form-control"
 										name="txtStatus" value="${jedi.status}" readonly="readonly"></input></td>
 							</tr>
 
