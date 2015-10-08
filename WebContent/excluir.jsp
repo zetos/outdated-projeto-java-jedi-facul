@@ -36,15 +36,15 @@ pageEncoding="utf-8"%>
 <body id="page-top" class="index">
     <!-- Header -->
     <header>
-       <div class="row">
-          <div class="col-lg-12">
-             <div class="intro-text">
-                <span class="name">Excluir</span> <span class="skills">Medite
-                antes de tomar qualquer decisão..</span>
-                <br>
-            </div>
-        </div>
+     <div class="row">
+      <div class="col-lg-12">
+       <div class="intro-text">
+        <span class="name">Excluir</span> <span class="skills">Medite
+        antes de tomar qualquer decisão..</span>
+        <br>
     </div>
+</div>
+</div>
 </header>
 <!-- Atualizar Section -->
 <section id="listar">
@@ -61,61 +61,55 @@ pageEncoding="utf-8"%>
 								value="${jedi.nome}" id="name_jedi" readonly="readonly"></td>
                           </tr>
                           <tr>
-                             <td>Espécie:</td>
-                             <td><input class="form-control" type="text"
-                                name="txtEspecie" value="${jedi.especie}" id="specie_jedi" readonly="readonly">
-                                <p class="help-block text-danger"></td>
-                                </tr>
-                                <tr>
-                                 <td>Planeta:</td>
-                                 <td><input class="form-control" type="text" name="txtPlaneta"
-                                    value="${jedi.planeta}"	readonly="readonly"></td>
-                                </tr>
-                                <tr>
-                                 <td>Idade:</td>
-                                 <td><input class="form-control" type="number" name="txtIdade" min="0" max="999"
-                                    value="${jedi.idade}" readonly="readonly"></td>
-                                </tr>
-                                <tr>
-                                 <td>Sexo:</td>
-                                 <td><select class="form-control" name="txtSexo"
-                                    value="${jedi.sexo}" readonly="readonly">
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Feminino">Feminino</option>
-                                </select></td>
+                           <td>Espécie:</td>
+                           <td><input class="form-control" type="text"
+                            name="txtEspecie" value="${jedi.especie}" id="specie_jedi" readonly="readonly">
+                            <p class="help-block text-danger"></td>
                             </tr>
                             <tr>
-                             <td>MidiChlorians:</td>
-                             <td><input class="form-control" type="number" name="txtMidi" min="2500"
+                               <td>Planeta:</td>
+                               <td><input class="form-control" type="text" name="txtPlaneta"
+                                value="${jedi.planeta}"	readonly="readonly"></td>
+                            </tr>
+                            <tr>
+                               <td>Idade:</td>
+                               <td><input class="form-control" type="number" name="txtIdade" min="0" max="999"
+                                value="${jedi.idade}" readonly="readonly"></td>
+                            </tr>
+                            <tr>
+                                <td>Sexo:</td>
+                                <td><input class="form-control" type="text"
+                                    name="txtSexo" value="${jedi.sexo}">
+                                </td>
+                            </tr>
+                            <tr>
+                               <td>MidiChlorians:</td>
+                               <td><input class="form-control" type="number" name="txtMidi" min="2500"
                                 max="20000" value="${jedi.midiChlorians}" readonly="readonly" /></td>
                             </tr>
                             <tr>
-                             <td>Classe:</td>
-                             <td><select class="form-control" required name="txtClasse"
-                                value="${jedi.classe}" readonly="readonly">
-                                <option value="Iniciado">Iniciado</option>
-                                <option value="Corpo de Serviço">Corpo de Serviço</option>
-                                <option value="Padawan">Padawan</option>
-                                <option value="Cavaleiro">Cavaleiro</option>
-                                <option value="Mestre">Mestre</option>
-                            </select></td>
-                        </tr>
-                        <tr>
-                         <td>Status:</td>
-                         <td><input type="text" class="form-control"
-                           name="txtStatus" value="${jedi.status}" readonly="readonly"></input></td>
-                       </tr>
+                                <td>Classe:</td>
+                                <td> <input class="form-control" type="text"
+                                    name="txtClasse" value="${jedi.classe}">
+                                </td>
 
-                       <tr>
-                         <th colspan="2"><input type="submit"
-                            class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />   <a class="btn btn-default btn-lg" href="JediServlet?cmd=principal" role="button">Voltar</a>
-                        </th>
-                    </tr>
-                </table>
-            </form>
+                            </tr>
+                            <tr>
+                               <td>Status:</td>
+                               <td><input type="text" class="form-control"
+                                 name="txtStatus" value="${jedi.status}" readonly="readonly"></input></td>
+                             </tr>
+
+                             <tr>
+                               <th colspan="2"><input type="submit"
+                                class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />   <a class="btn btn-default btn-lg" href="JediServlet?cmd=principal" role="button">Voltar</a>
+                            </th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 </section>
 <!-- Footer -->
 <footer class="text-center">
