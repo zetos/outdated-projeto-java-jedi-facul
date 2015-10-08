@@ -61,7 +61,7 @@ pageEncoding="utf-8"%>
 		<ul class="nav navbar-nav navbar-right">
 			<li class="hidden"><a href="#page-top"></a></li>
 			<li class="page-scroll"><a href="#listar">Arquivos Jedi</a></li>
-			<li class="page-scroll"><a href="#contact">Registro</a></li>
+			<li class="page-scroll"><a href="#registro">Registro</a></li>
 			<li class="page-scroll"><a href="#about">Sobre</a></li>
 		</ul>
 	</div>
@@ -170,7 +170,8 @@ pageEncoding="utf-8"%>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2>Adicione um Jedi</h2>
+				<h2>Registre um Jedi</h2>
+				<h3>Que a força esqueja com você.</h3>
 				<br>
 			</div>
 		</div>

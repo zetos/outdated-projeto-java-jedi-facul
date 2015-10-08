@@ -82,10 +82,9 @@
 							</tr>
 							<tr>
 								<td>Sexo:</td>
-								<td><select class="form-control" name="txtSexo">
-										<option value="Masculino">Masculino</option>
-										<option value="Feminino">Feminino</option>
-								</select></td>
+								<td><input class="form-control" type="text"
+									name="txtSexo" value="${jedi.sexo}">
+								</td>
 							</tr>
 							<tr>
 								<td>MidiChlorians:</td>
@@ -94,13 +93,9 @@
 							</tr>
 							<tr>
 								<td>Classe:</td>
-								<td><select class="form-control" required name="txtClasse">
-										<option value="Iniciado">Iniciado</option>
-										<option value="Corpo de Serviço">Corpo de Serviço</option>
-										<option value="Padawan">Padawan</option>
-										<option value="Cavaleiro">Cavaleiro</option>
-										<option value="Mestre">Mestre</option>
-								</select></td>
+								<td><input class="form-control" type="text"
+									name="txtClasse" value="${jedi.classe}"
+								</td>
 							</tr>
 							<tr>
 								<td>Status:</td>
@@ -113,7 +108,7 @@
 							<tr>
 								<th colspan="2"><input type="submit"
 									class="btn btn-primary btn-lg" name="btAtualizar"
-									value="Salvar" />   <a class="btn btn-default btn-lg" href="index.jsp" role="button">Voltar</a></th>
+									value="Salvar" />   <a class="btn btn-default btn-lg" href="JediServlet?cmd=principal" role="button">Voltar</a></th>
 							</tr>
 						</table>
 					</form>

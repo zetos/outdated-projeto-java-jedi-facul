@@ -62,7 +62,7 @@ pageEncoding="utf-8"%>
     <p>Se você está aqui significa que fez algo de errado. Cuidado, esse pode ser um passo em direção ao lado negro !
       Por favor, medite e tente novamente.</p>
       <p><i>O erro é o caminho para o lado negro. O erro leva a raiva, a raiva leva ao ódio, o ódio leva ao sofrimento.</i></p>
-      <a class="btn btn-default btn-lg" href="index.jsp" role="button">Clique aqui para voltar</a>
+      <a class="btn btn-default btn-lg" href="JediServlet?cmd=principal" role="button">Clique aqui para voltar</a>
     </div>
   </div>
 </div>

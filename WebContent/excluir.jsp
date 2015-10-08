@@ -108,7 +108,7 @@ pageEncoding="utf-8"%>
 
                        <tr>
                          <th colspan="2"><input type="submit"
-                            class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />   <a class="btn btn-default btn-lg" href="index.jsp" role="button">Voltar</a>
+                            class="btn btn-primary btn-lg" name="btExcluir" value="Excluir" />   <a class="btn btn-default btn-lg" href="JediServlet?cmd=principal" role="button">Voltar</a>
                         </th>
                     </tr>
                 </table>
